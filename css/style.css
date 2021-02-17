@@ -7,6 +7,8 @@
 
 html,body{ height: 100%;}
 
+
+/***********SIDEBAR********************/
 .sidebar {
     float:left;
     width: 250px;
@@ -89,4 +91,151 @@ html,body{ height: 100%;}
 
 .sidebar__playlists a:hover {
     color: white;
+}
+
+/******************MAIN********************/
+.main {
+    width: calc(100% - 250px);
+    background-color: rgb(30,30,30);
+    height: 100%;
+
+    float:left;
+
+    padding: 15px 50px;
+    overflow-y: auto;
+}
+
+.main-wraper {
+    padding-bottom: 200px;
+}
+
+.main__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+
+.main__row__title {
+    width: 100%;
+}
+
+.main__row__title h2 {
+    color: white;
+}
+
+.main__col {
+    width: 10%;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-top:20px;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(190,190,190);
+
+}
+
+.main__col h3 {
+    margin: 8px 0;
+}
+.main__col p {
+    margin: 8px 0;
+}
+
+
+/**************PLAYER********************/
+.player {
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color:rgb(60,60,60)
+}
+
+.player__artist {
+    width: 20%;
+}
+
+.player__artist img {
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.player__artist h3 {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.player__artist h3 > span{
+    color: rgb(200,200,200);
+    font-size: 13px;
+}
+
+.player__control {
+    width: 70%;
+    text-align: center;
+}
+
+.player__control__buttons a{
+    color: white;
+    margin: 8px 15px;
+    font-size:18px;
+}
+
+.player__control__progress {
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(130,130,130);
+    border-radius: 8px;
+}
+
+.player__control__progress2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+
+
+
+/**************RESPONSIVE**********/
+
+@media screen and (max-width: 1900px){
+    .main__col {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1800px){
+    .main__col {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 990px){
+    .main__col {
+        margin-right: 2%;
+        width: 48%;
+    }
+}
+@media screen and (max-width: 700px){ 
+    .main__col {
+        margin-right: 0;
+        width: 95%;
+    }
 }
