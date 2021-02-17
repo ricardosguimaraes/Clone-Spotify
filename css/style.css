@@ -23,12 +23,13 @@ html,body{ height: 100%;}
 
 .sidebar__menu {
     margin: 20px 0;
-    color: rgb (190,190,190);
+    color: rgb(190,190,190);
 }
 
 .sidebar__logo img {
     max-width: 250px;
     width: 100%;
+    padding:20px;
 }
 
 .sidebar__menu a {
@@ -52,4 +53,40 @@ html,body{ height: 100%;}
     background-color:rgb(90,90,90);
     color:#fff;
     border-radius: 5px;
+}
+
+.sidebar__menu__item {
+    margin-top:12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.sidebar__menu__item i {
+    background-color:rgb(90,90,90);
+    padding:10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sidebar__menu p.sidebar__menu__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 20px;   
+}
+
+.sidebar__playlists {
+    padding: 20px 0;
+    border-top: 1px solid rgb(40,40,40);
+}
+
+.sidebar__playlists a {
+    margin: 10px 0;
+    display: block;
+    color: rgb(190,190,190);
+    text-decoration: none;
+}
+
+.sidebar__playlists a:hover {
+    color: white;
 }
